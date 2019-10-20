@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Login Page</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  	<div class="login-reg-panel">
+        <div class="login-info-box">
+			<h2>Have an account?</h2>
+			<p>Welcome Back!</p>
+			<label id="label-register" for="log-reg-show">Login</label>
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+							
+		<div class="register-info-box">
+			<h2>Don't have an account?</h2>
+			<p>Start your journey now!</p>
+			<label id="label-login" for="log-login-show">Register</label>
+			<input type="radio" name="active-log-panel" id="log-login-show">
+		</div>
+							
+	<form id="myForm" onsubmit="return validation()">
+        <div class="white-panel">
+			<div class="login-show">
+				<h2>LOGIN</h2>
+				<input type="text"required placeholder="Email" id="email">
+				<input type="password"required placeholder="Password" id="password">
+				<input type="submit" value="Login">
+				<a href="" onclick="abc()">Forgot password?</a>
+			</div>
+    </form>
+    <form id="myForm1" onsubmit="return validation1()">
+			<div class="register-show">
+				<h2>REGISTER</h2>
+				<input type="text"required placeholder="Email" id="mail">
+				<input type="password"required placeholder="Password">
+				<input type="password"required placeholder="Confirm Password">
+				<input type="submit"required value="Register">
+			</div>
+		</div>
+    </form>
+	</div>
+  <script src="js.js">
+    
+
+
+
+    
+    
+</script>
+</body>
+</html>
